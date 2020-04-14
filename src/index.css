@@ -1,4 +1,11 @@
 body {
+  background: #EFEFEF;
+  color: #454D53;
+  height: 100%;
+  line-height: 1.38;
+  margin: auto;
+  min-width: 1000px;
+  width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
