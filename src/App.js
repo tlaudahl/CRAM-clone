@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import './App.css';
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation/Navigation';
 import Registration from './components/Registration/Registration';
 
 function App() {

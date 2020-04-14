@@ -8,7 +8,6 @@ export const MainContent = styled.main`
     color: #222;
     font-size: 14px;
     min-height: 560px;
-    position: relative;
     overflow: hidden;
     margin: 0;
     outline: 0;
@@ -19,7 +18,6 @@ export const ContentType1 = styled.div`
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
     height: 100%;
     margin: 0 auto 30px;
-    position: relative;
     background-color: #f9f8f8;
 `
 
@@ -30,47 +28,41 @@ export const Body = styled.div`
     margin: 0;
     outline: 0;
     padding: 0;
-    position: relative;
-    left: 0;
-    transition: left .8s;
 `
 
 export const Heading = styled.div`
     height: 70px !important;
     overflow: visible;
     padding: 20px 0 20px 30px;
-    background: "#F9F8F8";
+    background: #F9F8F8;
     border: 1px solid #DEDEDE;
     border-radius: 10px 10px 0 0;
     margin-top: 33px;
     min-height: inherit;
-    position: relative;
 `
 
 export const ColumnListing = styled.ul`
-    position: relative;
-    display: inline-block;
     list-style: none;
-    vertical-align: baseline;
 `
 
 export const LeftSide = styled.li`
-    float: left;
     min-height: 525px;
     padding: 30px;
-    position: relative;
-    width: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 `
 
 export const SignUp = styled.form`
-    margin: 0;
-    position: relative;
+    margin: 0 auto;
 `
 
 export const SignUpLi = styled.li`
     clear: both;
     margin: 0 0 12px;
     list-style: none;
+    text-align: left;
 `
 
 export const Label = styled.label`
@@ -80,14 +72,15 @@ export const Label = styled.label`
     text-transform: uppercase;
     line-height: inherit;
     margin: 0 0 5px;
-    display: block;
-    float: left;
 `
 
 export const Input = styled.input`
     height: 44px;
     width: 405px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 10px;
     font: 14px "Open Sans", Arial, sans-serif;
     color: #3C3C38;
@@ -103,7 +96,6 @@ export const Button = styled.button`
     padding: 12px 0px;
     width: 120px;
     cursor: pointer;
-    display: inline-block;
     line-height: normal;
     font-size: 16px;
     text-align: center;
@@ -113,6 +105,6 @@ export const Button = styled.button`
 `
 
 export const P = styled.p`
-    font-size: 13px;
+    font-size: 1.6rem;
     margin: 25px 0;
 `

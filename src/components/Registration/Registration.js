@@ -7,7 +7,7 @@ export default function Registration() {
         <Body>
             <ContentType1>
                 <Heading>
-                    <h1>Sign up for your FREE account</h1>
+                    <h1 style={{ fontSize: "2.5rem"}}>Sign up for your FREE account</h1>
                 </Heading>
                 <MainContent>
                     <ColumnListing>
@@ -20,23 +20,17 @@ export default function Registration() {
                                     </SignUpLi>
                                     <SignUpLi>
                                         <Label>Choose a password.</Label>
-                                        <Input />
+                                        <Input type={'password'} />
                                     </SignUpLi>
                                     <SignUpLi>
                                         <Label>Enter your email.</Label>
                                         <Input />
                                     </SignUpLi>
-                                    <SignUpLi>
-                                        <Button>Sign Up</Button>
-                                    </SignUpLi>
+                                    <Button>Sign Up</Button>
                                 </ul>
                             </SignUp>
                             <P>
-                                By clicking 'Sign Up' you agree to our
-                                 <a href="/terms" target="blank">Terms of Use</a> 
-                                 and 
-                                 <a href="/privacy" target="blank">Privacy Policy</a> 
-                                .
+                                Already have an account? <a href='/login'>Login</a>.
                             </P>
                         </LeftSide>
                     </ColumnListing>
