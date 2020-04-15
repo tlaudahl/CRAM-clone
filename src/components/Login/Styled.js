@@ -28,6 +28,7 @@ export const Body = styled.div`
     margin: 0;
     outline: 0;
     padding: 0;
+    text-align: center;
 `
 
 export const Heading = styled.div`
