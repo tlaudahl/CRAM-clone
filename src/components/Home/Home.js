@@ -109,7 +109,7 @@ const CtaPromo = styled.div`
     position: absolute;
     text-align: center;
     right: 0px;
-    top: 54px;
+    top: 81px;
     z-index: 1;
 `
 
@@ -138,6 +138,43 @@ const CtaPromoH2 = styled.h2`
     font-size: 22px;
     margin: 80px 0 0 -40px;
     letter-spacing: .2px;
+`
+
+const Heading = styled.div`
+    border-bottom: 1px solid #DEDEDE;
+    border-radius: 14px 14px 0 0;
+    box-shadow: inset 1px 2px 1px #fff;
+    height: 80px !important;
+    margin-top: 25px;
+    overflow: visible;
+    padding: 0;
+    background: #F9F8F8;
+    border: 1px solid #DEDEDE;
+    min-height: inherit;
+    position: relative;
+`
+
+const HeadingUl = styled.ul`
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+`
+
+const HeadingLi = styled.li`
+    float: left;
+    font-size: 12px;
+    height: 65px;
+    text-align: center;
+    width: 178px;
+`
+
+const LiStrong = styled.strong`
+    color: #454D53;
+    display: block;
+    font-size: 22px;
+    font-weight: normal;
 `
 
 export default function Home() {
@@ -174,6 +211,24 @@ export default function Home() {
                     </CtaPromo>
                 </TopPlacement>
             </header>
+            <Heading>
+                <div>
+                    <HeadingUl style={{listStyle: 'none'}}>
+                        <HeadingLi>
+                            <LiStrong># of Members</LiStrong>
+                            members
+                        </HeadingLi>
+                        <HeadingLi>
+                            <LiStrong># of flashcards</LiStrong>
+                            flashcards
+                        </HeadingLi>
+                        <HeadingLi>
+                            <LiStrong># added this week</LiStrong>
+                            flashcards added this week
+                        </HeadingLi>
+                    </HeadingUl>
+                </div>
+            </Heading>
         </ContentType2>
     )
 }
