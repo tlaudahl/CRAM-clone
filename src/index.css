@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%;
-  text-align: center;
+}
+
+i {
+  color: rgb(75, 159, 63);
 }
 
 body {

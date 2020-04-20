@@ -6,7 +6,7 @@ export default function Navigation() {
     return (
         <ContainerDiv>
             <Nav>
-                <Logo>FlashCards</Logo>
+                <a href='/' style={{ textDecoration: "none" }}><Logo>FlashCards</Logo></a>
                 <NavLinks>
                     <NavLink to='/decks/create' style={linkStyle}>Create Deck</NavLink>
                     <NavLink to='/decks' style={linkStyle}>Decks</NavLink>
