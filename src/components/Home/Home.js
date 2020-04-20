@@ -152,14 +152,13 @@ const Heading = styled.div`
     border: 1px solid #DEDEDE;
     min-height: inherit;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 `
 
 const HeadingUl = styled.ul`
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 `
 
 const HeadingLi = styled.li`
@@ -175,6 +174,43 @@ const LiStrong = styled.strong`
     display: block;
     font-size: 22px;
     font-weight: normal;
+`
+
+const MainContent = styled.main`
+    background: #fff;
+    border-top: none;
+    min-height: 780px;
+    overflow: auto;
+    border: 1px solid #DDD;
+    color: #222;
+    font-size: 14px;
+    position: relative;
+`
+
+const MainContentH2 = styled.h2`
+    text-align: center;
+    clear: both;
+    font-size: 16px;
+    padding: 0 0 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`
+
+const H2Span = styled.span`
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+`
+
+const CatergoryA = styled.a`
+    text-decoration: none;
+    color: #1D95CB;
+    font-size: 1.8rem;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export default function Home() {
@@ -212,8 +248,7 @@ export default function Home() {
                 </TopPlacement>
             </header>
             <Heading>
-                <div>
-                    <HeadingUl style={{listStyle: 'none'}}>
+                    <HeadingUl>
                         <HeadingLi>
                             <LiStrong># of Members</LiStrong>
                             members
@@ -227,8 +262,22 @@ export default function Home() {
                             flashcards added this week
                         </HeadingLi>
                     </HeadingUl>
-                </div>
             </Heading>
+            <MainContent>
+                        <div>
+                            <MainContentH2>
+                                <H2Span>Browse By Subject</H2Span>
+                            </MainContentH2>
+                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center' }}>
+                                <CatergoryA href='/javascript'><i className="fab fa-js-square fa-6x"></i> JavaScript</CatergoryA>
+                                <CatergoryA href='/node'><i className="fab fa-node fa-6x"></i> Node.js</CatergoryA>
+                                <CatergoryA href='/react'><i className="fab fa-react fa-6x"></i> React</CatergoryA>
+                                <CatergoryA href='/python'><i className="fab fa-python fa-6x"></i> Python</CatergoryA>
+                                <CatergoryA href='/css'><i className="fab fa-css3-alt fa-6x"></i> CSS</CatergoryA>
+                                <CatergoryA href='/python'><i className="fab fa-html5 fa-6x"></i> HTML</CatergoryA>
+                        </div>
+            </MainContent>
         </ContentType2>
     )
 }

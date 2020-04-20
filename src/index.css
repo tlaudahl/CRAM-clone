@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+i {
+  color: rgb(75, 159, 63);
+}
+
 body {
   background: #EFEFEF;
   color: #454D53;
